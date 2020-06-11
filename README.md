@@ -23,3 +23,11 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 -此处有个小坑，按照官方指导说法是这样的：If your project is not created with TypeScript enabled, npx may be using a cached version of create-react-app. Remove previously installed versions with npm uninstall -g create-react-app
 如果运行有问题的话，可能需要卸载一下全局的create-react-app
 ```
+
+* 引入antd UI组件库
+```html
+安装： yarn add antd
+然后引入antd的样式文件
+
+-antd 默认支持基于ES modules的tree shaking，对于js部分，直接引入import { Button } from 'antd' 就会有按需加载的效果
+```
