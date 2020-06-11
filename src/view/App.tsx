@@ -1,13 +1,11 @@
 import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        我是主页
-      </header>
-    </div>
-  );
+const App = (): React.FunctionComponentElement<unknown> => {
+    return (
+        <>
+            <div>我是首页</div>
+        </>
+    );
 }
 
 export default App;
