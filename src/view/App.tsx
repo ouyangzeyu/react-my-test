@@ -1,9 +1,10 @@
 import React from 'react';
+import AppLayout from './components/AppLayout'
 
 const App = (): React.FunctionComponentElement<unknown> => {
     return (
         <>
-            <div>我是首页</div>
+            <AppLayout />
         </>
     );
 }
