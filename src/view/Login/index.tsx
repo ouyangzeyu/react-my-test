@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import './index.less'
 const Login = (): React.FunctionComponentElement<unknown> => {
     return (
@@ -10,6 +11,7 @@ const Login = (): React.FunctionComponentElement<unknown> => {
                 <div>
                     密码:<input className="password" type="password" />
                 </div>
+                <Link  to='/main'>去到主页面</Link>
             </div>
         </div>
     );

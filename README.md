@@ -35,9 +35,9 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 * 引入react-router
 ```html
 安装：
-yarn add react-router history
+yarn add react-router-dom history
 #如果是typescript环境
-yarn add react-router @types/react-router history @types/history
+yarn add react-router-dom @types/react-router history @types/history
 ```
 -路由的两种写法，第一种是标签嵌套
 ```typescript

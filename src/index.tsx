@@ -1,7 +1,7 @@
 // 主入口文件
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Switch, Route, Redirect } from 'react-router';
+import { Router, Switch, Route, Redirect } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 import AppLayout from './view/AppLayout';
 import Login from './view/Login';
