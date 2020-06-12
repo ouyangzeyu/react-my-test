@@ -31,3 +31,49 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 
 -antd 默认支持基于ES modules的tree shaking，对于js部分，直接引入import { Button } from 'antd' 就会有按需加载的效果
 ```
+
+* 引入react-router
+```html
+安装：
+yarn add react-router history
+#如果是typescript环境
+yarn add react-router @types/react-router history @types/history
+```
+-路由的两种写法，第一种是标签嵌套
+```typescript
+ReactDOM.render(
+    <Router>
+    <Route path="/" component={App}>
+        <Route path="about" component={About} />
+        <Route path="inbox" component={Inbox}>
+            <Route path="messages/:id" component={Message} />
+        </Route>
+        </Route>
+    </Router>,
+     document.getElementById('root')
+);
+```
+第二种是配置路由数组映射路由关系并传入路由组件
+```typescript
+const routeConfig = [
+    { path: '/',
+      component: App,
+      indexRoute: { component: Dashboard },
+      childRoutes: [
+        { path: 'about', component: About },
+        { path: 'inbox',
+          component: Inbox,
+          childRoutes: [
+            { path: '/messages/:id', component: Message },
+            { path: 'messages/:id',
+              onEnter: function (nextState, replaceState) {
+                replaceState(null, '/messages/' + nextState.params.id)
+              }
+            }
+          ]
+        }
+      ]
+    }
+]
+React.render(<Router routes={routeConfig} />, document.getElementById('root'))
+```
