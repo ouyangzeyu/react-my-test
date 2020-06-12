@@ -77,3 +77,29 @@ const routeConfig = [
 ]
 React.render(<Router routes={routeConfig} />, document.getElementById('root'))
 ```
+
+* 由于create-react-app隐藏了webpack的配置，所以需要引入craco来做webpack配置
+$ yarn add @craco/craco
+或者
+$ npm install @craco/craco --save
+```typescript
+// 修改 package.json 里的启动配置：
+"scripts": {
+   "start": "craco start",
+   "build": "craco build",
+   "test": "craco test",
+}
+```
+然后在项目根目录新建craco.config.js文件
+配置说明：https://github.com/gsoft-inc/craco/blob/master/packages/craco/README.md#configuration-overview
+
+如果要引入支持less的话，需要下载一个插件
+yarn add craco-less
+然后在craco.config.js中配置：
+```javascript
+const CracoLessPlugin = require("craco-less");
+
+module.exports = {
+    plugins: [{ plugin: CracoLessPlugin }]
+}
+```

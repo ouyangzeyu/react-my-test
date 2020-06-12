@@ -1156,6 +1156,15 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@craco/craco@^5.6.4":
+  version "5.6.4"
+  resolved "https://npm.workec.com/@craco%2fcraco/-/craco-5.6.4.tgz#de7a707c727864f39e6afc192fb6732c3ca45f90"
+  integrity sha1-3npwfHJ4ZPOeavwZL7ZzLDykX5A=
+  dependencies:
+    cross-spawn "^7.0.0"
+    lodash "^4.17.15"
+    webpack-merge "^4.2.2"
+
 "@csstools/convert-colors@^1.4.0":
   version "1.4.0"
   resolved "https://registry.npm.taobao.org/@csstools/convert-colors/download/@csstools/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
@@ -2229,7 +2238,7 @@ arrify@^1.0.1:
   resolved "https://registry.npm.taobao.org/arrify/download/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
   integrity sha1-iYUI2iIm84DfkEcoRWhJwVAaSw0=
 
-asap@~2.0.6:
+asap@~2.0.3, asap@~2.0.6:
   version "2.0.6"
   resolved "https://registry.npm.taobao.org/asap/download/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
@@ -3083,6 +3092,11 @@ clone-deep@^4.0.1:
     kind-of "^6.0.2"
     shallow-clone "^3.0.0"
 
+clone@^2.1.2:
+  version "2.1.2"
+  resolved "https://npm.workec.com/clone/-/clone-2.1.2.tgz#1b7f4b9f591f1e8f83670401600345a02887435f"
+  integrity sha1-G39Ln1kfHo+DZwQBYANFoCiHQ18=
+
 co@^4.6.0:
   version "4.6.0"
   resolved "https://registry.npm.taobao.org/co/download/co-4.6.0.tgz#6ea6bdf3d853ae54ccb8e47bfa0bf3f9031fb184"
@@ -3361,6 +3375,14 @@ cosmiconfig@^6.0.0:
     path-type "^4.0.0"
     yaml "^1.7.2"
 
+craco-less@^1.17.0:
+  version "1.17.0"
+  resolved "https://npm.workec.com/craco-less/-/craco-less-1.17.0.tgz#3d92e59966e1fdecef4d173b2389985a75cb6bb9"
+  integrity sha1-PZLlmWbh/ezvTRc7I4mYWnXLa7k=
+  dependencies:
+    less "^3.11.1"
+    less-loader "^6.1.0"
+
 create-ecdh@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/create-ecdh/download/create-ecdh-4.0.3.tgz#c9111b6f33045c4697f144787f9254cdc77c45ff"
@@ -3411,6 +3433,15 @@ cross-spawn@^6.0.0, cross-spawn@^6.0.5:
     semver "^5.5.0"
     shebang-command "^1.2.0"
     which "^1.2.9"
+
+cross-spawn@^7.0.0:
+  version "7.0.3"
+  resolved "https://npm.workec.com/cross-spawn/-/cross-spawn-7.0.3.tgz#f73a85b9d5d41d045551c177e2882d4ac85728a6"
+  integrity sha1-9zqFudXUHQRVUcF34ogtSshXKKY=
+  dependencies:
+    path-key "^3.1.0"
+    shebang-command "^2.0.0"
+    which "^2.0.1"
 
 crypto-browserify@^3.11.0:
   version "3.12.0"
@@ -3474,6 +3505,25 @@ css-loader@3.4.2:
     postcss-modules-values "^3.0.0"
     postcss-value-parser "^4.0.2"
     schema-utils "^2.6.0"
+
+css-loader@^3.5.3:
+  version "3.5.3"
+  resolved "https://npm.workec.com/css-loader/-/css-loader-3.5.3.tgz#95ac16468e1adcd95c844729e0bb167639eb0bcf"
+  integrity sha1-lawWRo4a3NlchEcp4LsWdjnrC88=
+  dependencies:
+    camelcase "^5.3.1"
+    cssesc "^3.0.0"
+    icss-utils "^4.1.1"
+    loader-utils "^1.2.3"
+    normalize-path "^3.0.0"
+    postcss "^7.0.27"
+    postcss-modules-extract-imports "^2.0.0"
+    postcss-modules-local-by-default "^3.0.2"
+    postcss-modules-scope "^2.2.0"
+    postcss-modules-values "^3.0.0"
+    postcss-value-parser "^4.0.3"
+    schema-utils "^2.6.6"
+    semver "^6.3.0"
 
 css-prefers-color-scheme@^3.1.1:
   version "3.1.1"
@@ -4089,7 +4139,7 @@ entities@^2.0.0:
   resolved "https://registry.npm.taobao.org/entities/download/entities-2.0.3.tgz#5c487e5742ab93c15abb5da22759b8590ec03b7f"
   integrity sha1-XEh+V0Krk8Fau12iJ1m4WQ7AO38=
 
-errno@^0.1.3, errno@~0.1.7:
+errno@^0.1.1, errno@^0.1.3, errno@~0.1.7:
   version "0.1.7"
   resolved "https://registry.npm.taobao.org/errno/download/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
   integrity sha1-RoTXF3mtOa8Xfj8AeZb3xnyFJhg=
@@ -5406,6 +5456,11 @@ ignore@^4.0.6:
   resolved "https://registry.npm.taobao.org/ignore/download/ignore-4.0.6.tgz?cache=0&sync_timestamp=1590809289115&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fignore%2Fdownload%2Fignore-4.0.6.tgz#750e3db5862087b4737ebac8207ffd1ef27b25fc"
   integrity sha1-dQ49tYYgh7RzfrrIIH/9HvJ7Jfw=
 
+image-size@~0.5.0:
+  version "0.5.5"
+  resolved "https://npm.workec.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
+  integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
+
 immer@1.10.0:
   version "1.10.0"
   resolved "https://registry.npm.taobao.org/immer/download/immer-1.10.0.tgz?cache=0&sync_timestamp=1591819526584&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fimmer%2Fdownload%2Fimmer-1.10.0.tgz#bad67605ba9c810275d91e1c2a47d4582e98286d"
@@ -6622,6 +6677,33 @@ left-pad@^1.3.0:
   resolved "https://registry.npm.taobao.org/left-pad/download/left-pad-1.3.0.tgz#5b8a3a7765dfe001261dde915589e782f8c94d1e"
   integrity sha1-W4o6d2Xf4AEmHd6RVYnngvjJTR4=
 
+less-loader@^6.1.0, less-loader@^6.1.1:
+  version "6.1.1"
+  resolved "https://npm.workec.com/less-loader/-/less-loader-6.1.1.tgz#cb17cc2b7acba46e5d6932416e0ba8fa5964fcfe"
+  integrity sha1-yxfMK3rLpG5daTJBbguo+llk/P4=
+  dependencies:
+    clone "^2.1.2"
+    less "^3.11.3"
+    loader-utils "^2.0.0"
+    schema-utils "^2.7.0"
+
+less@^3.11.1, less@^3.11.3:
+  version "3.11.3"
+  resolved "https://npm.workec.com/less/-/less-3.11.3.tgz#2d853954fcfe0169a8af869620bcaa16563dcc1c"
+  integrity sha1-LYU5VPz+AWmor4aWILyqFlY9zBw=
+  dependencies:
+    clone "^2.1.2"
+    tslib "^1.10.0"
+  optionalDependencies:
+    errno "^0.1.1"
+    graceful-fs "^4.1.2"
+    image-size "~0.5.0"
+    make-dir "^2.1.0"
+    mime "^1.4.1"
+    promise "^7.1.1"
+    request "^2.83.0"
+    source-map "~0.6.0"
+
 leven@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npm.taobao.org/leven/download/leven-3.1.0.tgz#77891de834064cccba82ae7842bb6b14a13ed7f2"
@@ -6697,6 +6779,15 @@ loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4.0:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
+
+loader-utils@^2.0.0:
+  version "2.0.0"
+  resolved "https://npm.workec.com/loader-utils/-/loader-utils-2.0.0.tgz#e4cace5b816d425a166b5f097e10cd12b36064b0"
+  integrity sha1-5MrOW4FtQloWa18JfhDNErNgZLA=
+  dependencies:
+    big.js "^5.2.2"
+    emojis-list "^3.0.0"
+    json5 "^2.1.2"
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -6955,7 +7046,7 @@ mime-types@^2.1.12, mime-types@~2.1.17, mime-types@~2.1.19, mime-types@~2.1.24:
   dependencies:
     mime-db "1.44.0"
 
-mime@1.6.0:
+mime@1.6.0, mime@^1.4.1:
   version "1.6.0"
   resolved "https://registry.npm.taobao.org/mime/download/mime-1.6.0.tgz?cache=0&sync_timestamp=1590596706367&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmime%2Fdownload%2Fmime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
   integrity sha1-Ms2eXGRVO9WNGaVor0Uqz/BJgbE=
@@ -8255,7 +8346,7 @@ postcss-modules-local-by-default@^3.0.2:
     postcss-selector-parser "^6.0.2"
     postcss-value-parser "^4.0.0"
 
-postcss-modules-scope@^2.1.1:
+postcss-modules-scope@^2.1.1, postcss-modules-scope@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/postcss-modules-scope/download/postcss-modules-scope-2.2.0.tgz#385cae013cc7743f5a7d7602d1073a89eaae62ee"
   integrity sha1-OFyuATzHdD9afXYC0Qc6iequYu4=
@@ -8553,7 +8644,7 @@ postcss-value-parser@^3.0.0:
   resolved "https://registry.npm.taobao.org/postcss-value-parser/download/postcss-value-parser-3.3.1.tgz#9ff822547e2893213cf1c30efa51ac5fd1ba8281"
   integrity sha1-n/giVH4okyE88cMO+lGsX9G6goE=
 
-postcss-value-parser@^4.0.0, postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
+postcss-value-parser@^4.0.0, postcss-value-parser@^4.0.2, postcss-value-parser@^4.0.3, postcss-value-parser@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/postcss-value-parser/download/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha1-RD9qIM7WSBor2k+oUypuVdeJoss=
@@ -8652,6 +8743,13 @@ promise-inflight@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/promise-inflight/download/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
+
+promise@^7.1.1:
+  version "7.3.1"
+  resolved "https://npm.workec.com/promise/-/promise-7.3.1.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
+  integrity sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==
+  dependencies:
+    asap "~2.0.3"
 
 promise@^8.0.3:
   version "8.1.0"
@@ -9503,7 +9601,7 @@ request-promise-native@^1.0.5:
     stealthy-require "^1.1.1"
     tough-cookie "^2.3.3"
 
-request@^2.87.0, request@^2.88.0:
+request@^2.83.0, request@^2.87.0, request@^2.88.0:
   version "2.88.2"
   resolved "https://registry.npm.taobao.org/request/download/request-2.88.2.tgz#d73c918731cb5a87da047e207234146f664d12b3"
   integrity sha1-1zyRhzHLWofaBH4gcjQUb2ZNErM=
@@ -9785,7 +9883,7 @@ schema-utils@^1.0.0:
     ajv-errors "^1.0.0"
     ajv-keywords "^3.1.0"
 
-schema-utils@^2.5.0, schema-utils@^2.6.0, schema-utils@^2.6.1, schema-utils@^2.6.4, schema-utils@^2.6.5:
+schema-utils@^2.5.0, schema-utils@^2.6.0, schema-utils@^2.6.1, schema-utils@^2.6.4, schema-utils@^2.6.5, schema-utils@^2.6.6, schema-utils@^2.7.0:
   version "2.7.0"
   resolved "https://registry.npm.taobao.org/schema-utils/download/schema-utils-2.7.0.tgz#17151f76d8eae67fbbf77960c33c676ad9f4efc7"
   integrity sha1-FxUfdtjq5n+793lgwzxnatn078c=
@@ -10473,6 +10571,14 @@ style-loader@0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
+style-loader@^1.2.1:
+  version "1.2.1"
+  resolved "https://npm.workec.com/style-loader/-/style-loader-1.2.1.tgz#c5cbbfbf1170d076cfdd86e0109c5bba114baa1a"
+  integrity sha1-xcu/vxFw0HbP3YbgEJxbuhFLqho=
+  dependencies:
+    loader-utils "^2.0.0"
+    schema-utils "^2.6.6"
+
 stylehacks@^4.0.0:
   version "4.0.3"
   resolved "https://registry.npm.taobao.org/stylehacks/download/stylehacks-4.0.3.tgz#6718fcaf4d1e07d8a1318690881e8d96726a71d5"
@@ -10816,7 +10922,7 @@ typedarray@^0.0.6:
 
 typescript@^3.9.5:
   version "3.9.5"
-  resolved "https://registry.npm.taobao.org/typescript/download/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
+  resolved "https://npm.workec.com/typescript/-/typescript-3.9.5.tgz#586f0dba300cde8be52dd1ac4f7e1009c1b13f36"
   integrity sha1-WG8NujAM3ovlLdGsT34QCcGxPzY=
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
@@ -11172,6 +11278,13 @@ webpack-manifest-plugin@2.2.0:
     lodash ">=3.5 <5"
     object.entries "^1.1.0"
     tapable "^1.0.0"
+
+webpack-merge@^4.2.2:
+  version "4.2.2"
+  resolved "https://npm.workec.com/webpack-merge/-/webpack-merge-4.2.2.tgz#a27c52ea783d1398afd2087f547d7b9d2f43634d"
+  integrity sha512-TUE1UGoTX2Cd42j3krGYqObZbOD+xF7u28WB7tfUordytSjbWTIjK/8V0amkBfTYN4/pB/GIDlJZZ657BGG19g==
+  dependencies:
+    lodash "^4.17.15"
 
 webpack-sources@^1.1.0, webpack-sources@^1.4.0, webpack-sources@^1.4.1, webpack-sources@^1.4.3:
   version "1.4.3"

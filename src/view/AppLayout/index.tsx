@@ -7,7 +7,7 @@ import {
     TeamOutlined,
     UserOutlined,
 } from '@ant-design/icons';
-import './AppLayout.css'
+import './index.less'
 
 const { Header, Content, Footer, Sider } = Layout;
 const { SubMenu } = Menu;
