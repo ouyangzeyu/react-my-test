@@ -103,3 +103,12 @@ module.exports = {
     plugins: [{ plugin: CracoLessPlugin }]
 }
 ```
+
+* 引入axios来处理http请求
+文档说明：https://github.com/axios/axios
+```html
+yarn add axios
+或
+npm install axios
+```
+然后src目录新建server文件夹，新建server.js文件 ，引入axios对请求做统一处理或者封装，之后在组件中引入server.js就可以发起请求了
