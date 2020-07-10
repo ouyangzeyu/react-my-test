@@ -25,14 +25,16 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-router": "^5.1.7",
     "antd": "^4.3.3",
+    "axios": "^0.19.2",
     "craco-less": "^1.17.0",
     "history": "^4.10.1",
+    "http-proxy-middleware": "^1.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.0",
     "react-router": "^5.2.0",
-    "react-scripts": "3.4.1",
-    "redux": "^4.0.5"
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1"
   },
   "eslintConfig": {
     "extends": "react-app"

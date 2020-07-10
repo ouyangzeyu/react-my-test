@@ -35,9 +35,9 @@ yarn add typescript @types/node @types/react @types/react-dom @types/jest
 * 引入react-router
 ```html
 安装：
-yarn add react-router history
+yarn add react-router-dom history
 #如果是typescript环境
-yarn add react-router @types/react-router history @types/history
+yarn add react-router-dom @types/react-router history @types/history
 ```
 -路由的两种写法，第一种是标签嵌套
 ```typescript
@@ -103,3 +103,12 @@ module.exports = {
     plugins: [{ plugin: CracoLessPlugin }]
 }
 ```
+
+* 引入axios来处理http请求
+文档说明：https://github.com/axios/axios
+```html
+yarn add axios
+或
+npm install axios
+```
+然后src目录新建server文件夹，新建server.js文件 ，引入axios对请求做统一处理或者封装，之后在组件中引入server.js就可以发起请求了
